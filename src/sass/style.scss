@@ -9,6 +9,9 @@
 @import 'blocks/title';
 @import 'blocks/button';
 @import 'blocks/sidepanel';
+@import 'blocks/menu.scss';
+@import 'blocks/about';
+@import 'blocks/resume';
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -19,6 +22,18 @@
 .container {
     width: 1140px;
     margin: 0 auto;
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background-color: $main-color;
+    margin-top: 25px;
+
+    &-center {
+        margin: 0 auto;
+        margin-top: 22px;
+    }
 }
 
 
