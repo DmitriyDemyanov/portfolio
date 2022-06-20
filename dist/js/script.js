@@ -8,3 +8,8 @@ hamburger.addEventListener('click', () => {
 close.addEventListener('click', () => {
     menu.classList.remove('active');
 });
+
+const counters = document.querySelectorAll('.scale__progress');
+const values = document.querySelectorAll('.scale__value');
+
+counters.forEach((item, i) => values[i].style.width = item.textContent);

@@ -1,0 +1,50 @@
+.price {
+    padding-top: 60px;
+    &__title {
+        text-align: center;
+        @include before_circle;
+        text-align: center;
+        padding-left: 0;
+        &:before {
+            top: -7px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+    }
+    &__wrapper {
+        padding-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 365px);
+        grid-template-rows:repeat(3,minmax(40px, auto));
+        grid-auto-rows: minmax(40px, auto);
+        justify-content: space-between;
+        row-gap: 18px;
+    }
+    &__box {
+        padding-left: 25px;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: $main-color;
+            top: 4px;
+            left: 0;
+
+        }
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+}

@@ -36,5 +36,39 @@
             min-height: 65px;
         }
     }
-
+    .scale {      
+        &__wrapper {
+            margin-top: 120px;
+            display: grid;
+            grid-template-columns: repeat(3, 3fr);
+            grid-template-rows: repeat(2, minmax(70px, auto));
+            grid-auto-rows: repeat(2, minmax(70px, auto));
+            column-gap: 45px;
+            row-gap: 30px;
+            
+        }
+        &__item {
+            position: relative;
+        }
+        &-subtitle {
+            @include before_circle;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__line {
+            height: 14px;
+            width: 350px;
+            background-color: #E8E4DE;
+            border-radius: 4px;
+            position: absolute;
+            left: 0;
+            top: 49px;
+        }
+        &__value {
+            height: 14px;
+            width: 100%;
+            border-radius: 4px;
+            background-color: $main-color;
+        }
+    }
 }
