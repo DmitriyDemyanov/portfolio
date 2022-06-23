@@ -17,6 +17,7 @@
 @import 'blocks/price';
 @import 'blocks/contacts';
 
+
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -33,11 +34,13 @@
     height: 3px;
     background-color: $main-color;
     margin-top: 25px;
+    &__mt4 {
+        margin-top: 4px;
+    }
 
     &-center {
         margin: 0 auto;
         margin-top: 22px;
     }
 }
-
-
+@import 'blocks/media';
